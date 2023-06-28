@@ -1,6 +1,6 @@
-@import url("reset.css");
-@import url("slick.css");
-@import url("slick-theme.css");
+@import url("/tegrus_library/css/reset.css");
+@import url("/tegrus_library/css/slick.css");
+@import url("/tegrus_library/css/slick-theme.css");
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -36,7 +36,7 @@ textarea {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.eot") format("eot"), url("../fonts/OpenSans-Light.svg") format("svg");
+  src: url("/tegrus_library/fonts/OpenSans-Light.ttf") format("truetype"), url("/tegrus_library/fonts/OpenSans-Light.woff") format("woff"), url("/tegrus_library/fonts/OpenSans-Light.woff2") format("woff2"), url("/tegrus_library/fonts/OpenSans-Light.eot") format("eot"), url("/tegrus_library/fonts/OpenSans-Light.svg") format("svg");
   font-weight: 300;
   font-style: normal;
 }
@@ -44,7 +44,7 @@ textarea {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.eot") format("eot"), url("../fonts/OpenSans-Regular.svg") format("svg");
+  src: url("/tegrus_library/fonts/OpenSans-Regular.ttf") format("truetype"), url("/tegrus_library/fonts/OpenSans-Regular.woff") format("woff"), url("/tegrus_library/fonts/OpenSans-Regular.woff2") format("woff2"), url("/tegrus_library/fonts/OpenSans-Regular.eot") format("eot"), url("/tegrus_library/fonts/OpenSans-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -52,7 +52,7 @@ textarea {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-SemiBold.ttf") format("truetype"), url("../fonts/OpenSans-SemiBold.woff") format("woff"), url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.eot") format("eot"), url("../fonts/OpenSans-SemiBold.svg") format("svg");
+  src: url("/tegrus_library/fonts/OpenSans-SemiBold.ttf") format("truetype"), url("/tegrus_library/fonts/OpenSans-SemiBold.woff") format("woff"), url("/tegrus_library/fonts/OpenSans-SemiBold.woff2") format("woff2"), url("/tegrus_library/fonts/OpenSans-SemiBold.eot") format("eot"), url("/tegrus_library/fonts/OpenSans-SemiBold.svg") format("svg");
   font-weight: 600;
   font-style: normal;
 }
@@ -60,7 +60,7 @@ textarea {
 @font-face {
   font-family: "OpenSans";
   font-display: swap;
-  src: url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.eot") format("eot"), url("../fonts/OpenSans-Bold.svg") format("svg");
+  src: url("/tegrus_library/fonts/OpenSans-Bold.ttf") format("truetype"), url("/tegrus_library/fonts/OpenSans-Bold.woff") format("woff"), url("/tegrus_library/fonts/OpenSans-Bold.woff2") format("woff2"), url("/tegrus_library/fonts/OpenSans-Bold.eot") format("eot"), url("/tegrus_library/fonts/OpenSans-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -340,7 +340,7 @@ footer {
 }
 
 section.banner {
-  background: url("../img/banner.webp") 25%/cover no-repeat, #00255a;
+  background: url("/tegrus_library/img/banner.webp") 25%/cover no-repeat, #00255a;
   color: #ffffff;
   padding: 10% 0 10%;
 }
@@ -385,7 +385,7 @@ section.banner .text_container p {
 section.main {
   padding: 6.25rem 0 0;
   position: relative;
-  background: url("../img/main_background.webp") center/120rem no-repeat;
+  background: url("/tegrus_library/img/main_background.webp") center/120rem no-repeat;
 }
 
 @media (max-width:1400px) {
@@ -638,7 +638,7 @@ section.main .container.realization .row:nth-child(2) .step_item._anim-items._ac
 }
 
 section.main .container.realization .row:nth-child(2) .step_item:before {
-  content: url("../img/arrow.svg");
+  content: url("/tegrus_library/img/arrow.svg");
   display: block;
   width: 2.0625rem;
   height: 2.0625rem;
@@ -718,7 +718,7 @@ section.main .container.equipment ul.list li:last-child {
 }
 
 section.main .container.equipment ul.list li:before {
-  content: url("../img/icon_check.svg");
+  content: url("/tegrus_library/img/icon_check.svg");
   width: 1.25rem;
   height: 1.5625rem;
   -webkit-transform: translate(0, -0.375rem);
@@ -758,7 +758,7 @@ section.main .container.equipment ul.list._anim-items._active li:nth-child(4) {
 
 section.infrastructure {
   padding: 4% 0;
-  background: url("../img/section_background.webp") center/cover no-repeat, #00255a;
+  background: url("/tegrus_library/img/section_background.webp") center/cover no-repeat, #00255a;
   color: #ffffff;
 }
 
@@ -1239,8 +1239,8 @@ section.solution .container.review .col_right .content .quote {
 
 section.solution .container.review .col_right .content .quote:before {
   content: "";
-  -webkit-mask-image: url("../img/quotes.svg");
-  mask-image: url("../img/quotes.svg");
+  -webkit-mask-image: url("/tegrus_library/img/quotes.svg");
+  mask-image: url("/tegrus_library/img/quotes.svg");
   background: linear-gradient(259deg, #ff3435 12.13%, #4a1aef 148.99%) 100% no-repeat;
   width: 4.5rem;
   height: 3.5rem;
@@ -1277,7 +1277,7 @@ section.form .row {
 }
 
 section.form #requestForm {
-  background: url("../img/form_background.webp") center/cover no-repeat, #00255a;
+  background: url("/tegrus_library/img/form_background.webp") center/cover no-repeat, #00255a;
   max-width: 47.25rem;
   width: 100%;
   display: -webkit-box;
@@ -1353,6 +1353,7 @@ section.form #requestForm .register .form_inputs .input_box textarea {
   color: #000000;
   font-family: inherit;
   background-color: #f9f8fd;
+  border: 1px solid #f9f8fd;
 }
 
 section.form #requestForm .register .form_inputs .input_box input[type=text]::-webkit-input-placeholder,
@@ -1544,7 +1545,7 @@ section.form #requestForm .register .form_submit .sendbutton {
 
 #getSolutionButton span:after {
   content: "";
-  background: url("../img/icon_solution.svg") center/100% no-repeat;
+  background: url("/tegrus_library/img/icon_solution.svg") center/100% no-repeat;
   width: 1.375rem;
   height: 1.375rem;
   margin: 0 0 0 0.5rem;
