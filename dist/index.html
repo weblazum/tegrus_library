@@ -204,30 +204,29 @@
         <div class="container">
           <div class="wrapper_full">
             <div class="row">
-              <div id="requestForm">
-                <form method="post" action="" enctype="multipart/form-data">
+              <div class="form" id="requestForm">
+                <form action="#" method="POST" enctype="multipart/form-data">
                   <div class="form_title">
                     <h2>Получите расчет<br>вашего решения</h2>
                   </div>
-                  <div class="fill-form">Заполните все поля, пожалуйста</div>
                   <div class="register">
                     <div class="form_inputs">
-                      <fieldset class="input_box input_text" id="requestForm_input_i1">
-                        <input type="text" name="i1" placeholder="Имя Фамилия" required="" autocomplete="off">
+                      <fieldset class="input_box input_text">
+                        <input type="text" placeholder="Имя Фамилия" data-validate-field="name" autocomplete="off">
                       </fieldset>
-                      <fieldset class="input_box input_text" id="requestForm_input_i2">
-                        <input type="text" name="i2" placeholder="Название компании" required="" data-type="company" autocomplete="off">
+                      <fieldset class="input_box input_text">
+                        <input type="text" placeholder="Название компании" data-validate-field="company" autocomplete="off">
                       </fieldset>
-                      <fieldset class="input_box input_text" id="requestForm_input_i3">
-                        <input type="email" name="i3" placeholder="E-mail" required="" data-type="email" autocomplete="off">
+                      <fieldset class="input_box input_text">
+                        <input type="email" placeholder="E-mail" data-validate-field="email" autocomplete="off">
                       </fieldset>
-                      <fieldset class="input_box input_textarea" id="requestForm_input_i4">
-                        <textarea name="i4" placeholder="Ваш вопрос" required="" data-type="question" autocomplete="off"></textarea>
+                      <fieldset class="input_box input_textarea">
+                        <textarea placeholder="Ваш вопрос" data-validate-field="question" autocomplete="off"></textarea>
                       </fieldset>
                     </div>
                     <div class="form_check">
                       <fieldset class="checkbox-field">
-                        <input id="requestForm_policyCheckbox" type="checkbox" name="policy" value="1" required="">
+                        <input id="requestForm_policyCheckbox" type="checkbox" name="policy" value="1">
                         <label class="customCheckbox" for="requestForm_policyCheckbox"></label>
                       </fieldset>
                       <div class="input text">Согласен с условиями <a href="https://tegrus.ru/about/privacy-policy/" target="_blank">политики обработки персональных данных</a></div>
@@ -248,7 +247,7 @@
         <div class="wrapper">
           <div class="row">
             <div class="col col_left">
-              <div class="content"><a href="https://tegrus.ru"><img src="img/logo_footer.svg" alt="Tegrus"></a></div>
+              <div class="content"><a href="https://tegrus.ru" target="_blank"><img src="img/logo_footer.svg" alt="Tegrus"></a></div>
             </div>
             <div class="col col_right">
               <div class="row">
@@ -277,8 +276,9 @@
         </div>
       </div>
     </footer><a id="getSolutionButton" href="#requestForm"><span>Подобрать решение </span></a>
-    <script type="text/javascript" src="libs/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="libs/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script src="libs/slick.min.js"></script>
+    <script src="libs/just-validate.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

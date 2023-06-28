@@ -105,3 +105,36 @@ if (animItems.length > 0) {
         animOnScroll();
     }, 300);
 }
+
+// just-validate
+new window.JustValidate('.form', {
+    rules: {
+        company: {
+            required: true,
+        },
+        question: {
+            required: true,
+        }
+    },
+    colorWrong: '#ff3435',
+    messages: {
+        name: {
+            required: 'Введите имя',
+            minLength: 'Имя не должно быть меньше 3 символов',
+            maxLength: 'Имя не должно содержать более 15 символов'
+        },
+        company: {
+            required: 'Введите название компании',
+        },
+        email: {
+            email: 'Введите корректный E-mail',
+            required: 'Введите E-mail'
+        },
+        question: {
+            required: 'Напишите ваш вопрос'
+        }
+    },
+    submitHandler: function (thisForm) {
+
+    }
+})

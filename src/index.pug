@@ -167,27 +167,26 @@ html(lang='ru')
 				.container
 					.wrapper_full
 						.row
-							#requestForm
-								form(method='post' action='' enctype='multipart/form-data')
+							.form#requestForm
+								form(action="#" method='POST' enctype='multipart/form-data')
 									.form_title
 										h2
 											| Получите расчет
 											br
 											| вашего решения
-									.fill-form Заполните все поля, пожалуйста
 									.register
 										.form_inputs
-											fieldset#requestForm_input_i1.input_box.input_text
-												input(type='text' name='i1' placeholder='Имя Фамилия' required='' autocomplete='off')
-											fieldset#requestForm_input_i2.input_box.input_text
-												input(type='text' name='i2' placeholder='Название компании' required='' data-type='company' autocomplete='off')
-											fieldset#requestForm_input_i3.input_box.input_text
-												input(type='email' name='i3' placeholder='E-mail' required='' data-type='email' autocomplete='off')
-											fieldset#requestForm_input_i4.input_box.input_textarea
-												textarea(name='i4' placeholder='Ваш вопрос' required='' data-type='question' autocomplete='off')
+											fieldset.input_box.input_text
+												input(type='text' placeholder='Имя Фамилия' data-validate-field="name" autocomplete='off')
+											fieldset.input_box.input_text
+												input(type='text' placeholder='Название компании' data-validate-field="company" autocomplete='off')
+											fieldset.input_box.input_text
+												input(type='email' placeholder='E-mail' data-validate-field="email" autocomplete='off')
+											fieldset.input_box.input_textarea
+												textarea(placeholder='Ваш вопрос' data-validate-field="question" autocomplete='off')
 										.form_check
 											fieldset.checkbox-field
-												input#requestForm_policyCheckbox(type='checkbox' name='policy' value='1' required='')
+												input#requestForm_policyCheckbox(type='checkbox' name='policy' value='1')
 												label.customCheckbox(for='requestForm_policyCheckbox')
 											.input.text
 												| Согласен с условиями 
@@ -200,7 +199,7 @@ html(lang='ru')
 					.row
 						.col.col_left
 							.content
-								a(href='https://tegrus.ru')
+								a(href='https://tegrus.ru' target="_blank")
 									img(src='img/logo_footer.svg' alt='Tegrus')
 						.col.col_right
 							.row
@@ -231,6 +230,7 @@ html(lang='ru')
 								nobr Все права защищены.
 		a#getSolutionButton(href='#requestForm')
 			span Подобрать решение 
-		script(type='text/javascript' src='libs/jquery-3.5.1.min.js')
-		script(type='text/javascript' src='libs/slick.min.js')
-		script(type='text/javascript' src='js/main.js')
+		script(src='libs/jquery-3.5.1.min.js')
+		script(src='libs/slick.min.js')
+		script(src='libs/just-validate.min.js')
+		script(src='js/main.js')
